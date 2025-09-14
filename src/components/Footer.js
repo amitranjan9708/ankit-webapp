@@ -75,16 +75,16 @@ const Footer = () => {
                 elegance, and timeless beauty.
               </p>
               <div className="social-links">
-                <a href="#" className="social-link">
+                <a href="https://instagram.com/shrivesta" className="social-link" target="_blank" rel="noopener noreferrer">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://facebook.com/shrivesta" className="social-link" target="_blank" rel="noopener noreferrer">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://twitter.com/shrivesta" className="social-link" target="_blank" rel="noopener noreferrer">
                   <Twitter size={20} />
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://youtube.com/shrivesta" className="social-link" target="_blank" rel="noopener noreferrer">
                   <Youtube size={20} />
                 </a>
               </div>
