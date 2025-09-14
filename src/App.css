@@ -1,0 +1,162 @@
+.App {
+  text-align: left;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-gold), var(--primary-maroon));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-maroon);
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img[src=""], img:not([src]) {
+  opacity: 0;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+select:focus,
+a:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background: var(--primary-gold);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--primary-gold);
+  color: white;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+  
+  .flex-mobile-column {
+    flex-direction: column !important;
+  }
+  
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .full-width-mobile {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide-mobile-small {
+    display: none !important;
+  }
+  
+  .show-mobile-small {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+  
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
